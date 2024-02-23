@@ -1,2 +1,8 @@
 :root {
+  --color-white: #fff;
+  --color-green: #007e5b;
+  --color-dark-green: #245852;
+  --color-black: #292929;
 }
+
+/* media breakpoints: 992px, 768px, 576px, 480px */
