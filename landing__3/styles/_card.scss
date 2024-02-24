@@ -1,0 +1,61 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "sass:color";
+
+.info-card {
+  width: 180px;
+  height: 205px;
+  padding: 20px 10px 0;
+  border-radius: 20px;
+  background-color: color.adjust(v.$color_white, $alpha: -0.85);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  @include m.d-flex(start, center, nowrap, column, 0, 10px);
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: v.$color_black;
+    transition: fill 0.3s;
+  }
+
+  &__title {
+    @include m.font(18px, 500, v.$color_black);
+    transition: color 0.3s;
+  }
+
+  &__desc {
+    text-align: center;
+    @include m.font(16px, 300, v.$color_black);
+    transition: color 0.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: color.adjust(v.$color_white, $alpha: -0.95);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+    .info-card__icon {
+      fill: v.$color_white;
+    }
+
+    .info-card__title,
+    .info-card__desc {
+      color: v.$color_white;
+    }
+  }
+
+  @media (max-width: v.$media_sm) {
+    & {
+      width: 140px;
+      height: 170px;
+    }
+
+    &__title {
+      @include m.font(14px, 400, v.$color_black);
+    }
+
+    &__desc {
+      @include m.font(11px, 300, v.$color_black);
+    }
+  }
+}
