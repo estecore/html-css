@@ -9,6 +9,15 @@
     color: v.$color_black;
   }
 }
+%hover_white {
+  & {
+    transition: color 0.3s;
+  }
+  &:hover {
+    cursor: pointer;
+    color: v.$color_white;
+  }
+}
 
 %hover_black-icon {
   & {
