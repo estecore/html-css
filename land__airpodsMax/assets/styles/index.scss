@@ -1,0 +1,12 @@
+@use "./variables" as v;
+@use "./importer";
+
+html {
+  font-size: 10px;
+  font-family: v.$font-family;
+}
+
+body {
+  font-size: 1.6rem;
+  background: v.$bg-blue no-repeat;
+}
