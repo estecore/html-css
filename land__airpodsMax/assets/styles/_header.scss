@@ -1,0 +1,85 @@
+@use "variables" as v;
+
+.header {
+  width: 100%;
+  padding: 40px 0 0;
+
+  &__inner {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo__icon {
+      cursor: pointer;
+      width: 25px;
+      height: 30px;
+    }
+
+    .nav {
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .list__item {
+          font-weight: 700;
+
+          &-button {
+            padding: 15px 58px;
+            background: v.$color-black;
+            border-radius: 30px;
+            color: v.$color-white;
+            font-weight: 700;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            transition: color 0.3s, background 0.3s;
+
+            &:hover {
+              background: v.$color-white;
+              color: v.$color-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 21rem;
+    padding: 60px 0 0;
+    position: absolute;
+    right: 0;
+
+    .title--pod {
+      position: relative;
+      z-index: -1;
+    }
+    .title--s {
+      position: relative;
+      top: 60px;
+    }
+    .title--m {
+      position: relative;
+      top: 265px;
+      left: -37px;
+    }
+    .title--ax {
+      position: relative;
+      top: 400px;
+      left: -100px;
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    width: 800px;
+    // height: 755px;
+  }
+}

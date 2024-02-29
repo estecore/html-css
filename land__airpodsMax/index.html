@@ -6,7 +6,7 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css?family=Inter: 500,700"
       rel="stylesheet"
     />
     <!-- Styles -->
@@ -16,29 +16,31 @@
   <body>
     <header class="header" aria-label="header section">
       <div class="container">
-        <div class="logo">
-          <svg class="logo__icon" aria-label="logo">
-            <use href="./assets/sprites.svg#logo-icon"></use>
-          </svg>
+        <div class="header__inner">
+          <div class="logo">
+            <svg class="logo__icon" aria-label="logo">
+              <use href="./assets/sprites.svg#logo-icon"></use>
+            </svg>
+          </div>
+          <nav class="nav" aria-label="navigation section">
+            <ul class="nav__list" aria-label="navigation list">
+              <li class="list__item" aria-label="navigation list item">
+                <a class="list__item-link" href="#">Info</a>
+              </li>
+              <li class="list__item" aria-label="navigation list item">
+                <a class="list__item-link" href="#">Product</a>
+              </li>
+              <li class="list__item" aria-label="navigation list item">
+                <a class="list__item-link" href="#">Contacts</a>
+              </li>
+              <li class="list__item" aria-label="navigation list item">
+                <button class="list__item-button" aria-label="button buy ">
+                  BUY
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav" aria-label="navigation section">
-          <ul class="nav__list" aria-label="navigation list">
-            <li class="list__item" aria-label="navigation list item">
-              <a class="list__item-link" href="#">Info</a>
-            </li>
-            <li class="list__item" aria-label="navigation list item">
-              <a class="list__item-link" href="#">Product</a>
-            </li>
-            <li class="list__item" aria-label="navigation list item">
-              <a class="list__item-link" href="#">Contacts</a>
-            </li>
-            <li class="list__item" aria-label="navigation list item">
-              <button class="list__item-button" aria-label="button buy ">
-                BUY
-              </button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -47,9 +49,21 @@
       <section class="section-intro">
         <div class="container">
           <div class="intro">
-            <h1 class="intro__title">Air Pod S M AX</h1>
+            <h1 class="intro__title">
+              <span class="title--air">Air</span
+              ><span class="title--pod">Pod</span><span class="title--s">S</span
+              ><span class="title--m">M</span><span class="title--ax">AX</span>
+            </h1>
 
-            <img src="./assets/images/blue.webp" alt="AirPods Max blue" />
+            <img
+              class="intro__img"
+              src="./assets/images/blue.webp"
+              alt="AirPods Max blue"
+            />
+            <!-- <img class="intro__img" src="./assets/images/pink.webp" alt="AirPods Max pink" />  -->
+            <!-- <img class="intro__img" src="./assets/images/green.webp" alt="AirPods Max green" />  -->
+            <!-- <img class="intro__img" src="./assets/images/black.webp" alt="AirPods Max black" />  -->
+            <!-- <img class="intro__img" src="./assets/images/white.webp" alt="AirPods Max white" />  -->
           </div>
         </div>
       </section>

@@ -9,4 +9,13 @@ html {
 body {
   font-size: 1.6rem;
   background: v.$bg-blue no-repeat;
+  color: v.$color-black;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 123rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
