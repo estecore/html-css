@@ -70,14 +70,20 @@ button {
 }
 
 .intro {
+  position: relative;
   text-align: center;
+  min-height: 1080px;
 }
 .intro__title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-weight: 700;
   font-size: 21rem;
   padding: 60px 0 0;
   position: absolute;
-  right: 0;
+  left: -20px;
 }
 .intro__title .title--pod {
   position: relative;
