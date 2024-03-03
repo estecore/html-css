@@ -156,6 +156,55 @@ button {
   height: 175px;
 }
 
+.section-composition {
+  padding: 0 0 180px;
+}
+.section-composition .composition {
+  text-align: center;
+}
+.section-composition .composition__title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.section-composition .composition__desc {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 650px;
+  margin: 20px auto 40px;
+}
+.section-composition .composition__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 625px;
+  margin: 0 auto;
+}
+.section-composition .composition__inner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 80px;
+}
+.section-composition .composition__inner-text__p {
+  max-width: 230px;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 500;
+}
+.section-composition .composition__inner-img {
+  border-radius: 10px;
+}
+
 html {
   font-size: 10px;
   font-family: Inter, sans-serif;
