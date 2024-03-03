@@ -139,6 +139,7 @@ button {
 .section-choose .choose__color .colors__item {
   cursor: pointer;
   padding: 50px 55px;
+  background: #f3f3f3;
   border: 2px solid #d9d9d9;
   border-radius: 20px;
   -webkit-transition: translate 0.2s, -webkit-box-shadow 0.2s;

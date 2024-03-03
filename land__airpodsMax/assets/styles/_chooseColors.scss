@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 .section-choose {
   padding: 50px 0 180px;
 
@@ -25,6 +27,7 @@
       &__item {
         cursor: pointer;
         padding: 50px 55px;
+        background: v.$color-white;
         border: 2px solid #d9d9d9;
         border-radius: 20px;
         transition: box-shadow 0.2s, translate 0.2s;
