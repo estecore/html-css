@@ -1,0 +1,22 @@
+.section-alive {
+  text-align: center;
+  padding: 80px 0 100px;
+  //   background: #fafafa;
+}
+.alive {
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &__time {
+    font-size: 210px;
+    font-weight: 700;
+    margin: 40px 0;
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

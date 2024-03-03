@@ -205,6 +205,46 @@ button {
   border-radius: 10px;
 }
 
+.section-buttery {
+  padding: 80px 0;
+  text-align: center;
+}
+.section-buttery .buttery__title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.section-buttery .buttery__desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px auto 40px;
+}
+.section-buttery .buttery__img {
+  width: 400px;
+  height: 365px;
+  border-radius: 10px;
+}
+
+.section-alive {
+  text-align: center;
+  padding: 80px 0 100px;
+}
+
+.alive__title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.alive__time {
+  font-size: 210px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+.alive__desc {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 html {
   font-size: 10px;
   font-family: Inter, sans-serif;
