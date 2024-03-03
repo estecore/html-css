@@ -47,7 +47,7 @@
 
     <main class="main" aria-label="main section">
       <!-- intro -->
-      <section class="section-intro">
+      <section class="section-intro" aria-label="intro section">
         <div class="container">
           <div class="intro">
             <h1 class="intro__title">
@@ -70,7 +70,7 @@
       </section>
 
       <!-- Choose color -->
-      <section class="section-choose">
+      <section class="section-choose" aria-label="choose color section">
         <div class="container">
           <div class="choose__color">
             <h3 class="choose__color-title">Choose your colour</h3>
@@ -79,15 +79,15 @@
               AirPods. The ultimate personal audio experience.
             </p>
 
-            <div class="colors">
-              <div class="colors__item">
+            <div class="colors" aria-label="choose color">
+              <div class="colors__item" aria-label="choose color button black">
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-black.webp"
                   alt="choose color black"
                 />
               </div>
-              <div class="colors__item">
+              <div class="colors__item" aria-label="choose color button white">
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-white.webp"
@@ -95,7 +95,7 @@
                 />
               </div>
 
-              <div class="colors__item">
+              <div class="colors__item" aria-label="choose color button green">
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-green.webp"
@@ -103,7 +103,7 @@
                 />
               </div>
 
-              <div class="colors__item">
+              <div class="colors__item" aria-label="choose color button pink">
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-pink.webp"
@@ -111,7 +111,7 @@
                 />
               </div>
 
-              <!-- <div class="colors__item">
+              <!-- <div class="colors__item" aria-label="choose color button blue">
                 <img
               class="colors__img"
                 src="./assets/images/colors/color-blue.webp"
@@ -124,7 +124,7 @@
       </section>
 
       <!-- Composition -->
-      <section class="section-composition">
+      <section class="section-composition" aria-label="composition section">
         <div class="container">
           <div class="composition">
             <h2 class="composition__title">
@@ -137,7 +137,7 @@
               can immerse yourself in the purity of sound.
             </p>
 
-            <div class="composition__inner">
+            <div class="composition__inner" aria-label="composition inner">
               <div class="composition__inner-text">
                 <p class="composition__inner-text__p">
                   The headband is made of breathable mesh, distributing the
@@ -185,9 +185,9 @@
       </section>
 
       <!-- Buttery -->
-      <section class="section-buttery">
+      <section class="section-buttery" aria-label="buttery section">
         <div class="container">
-          <div class="buttery">
+          <div class="buttery" aria-label="buttery inner">
             <h2 class="buttery__title">It even preserves the battery.</h2>
             <p class="buttery__desc">
               When stored in the sleek and lightweight <b>Smart Case</b> ,
@@ -223,9 +223,9 @@
       </section>
 
       <!-- Alive -->
-      <section class="section-alive">
+      <section class="section-alive" aria-label="alive section">
         <div class="container">
-          <div class="alive">
+          <div class="alive" aria-label="alive inner">
             <h2 class="alive__title">Stayin' alive, stayin' alive.</h2>
 
             <span class="alive__time">20</span>
@@ -240,5 +240,50 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="footer section">
+      <div class="container">
+        <div class="footer__inner" aria-label="footer inner">
+          <div class="footer__inner-text">
+            <p class="footer__inner-text__p">
+              Custom Spatial Audio with dynamic head tracking provides a
+              surround sound experience worthy of a movie theater.
+            </p>
+            <p class="footer__inner-text__p">
+              Through built-in gyroscopes and accelerometers, AirPods Max and
+              your iPhone, iPad, Mac or Apple TV detect the slightest head
+              movements and keep the sound steady on your device.
+            </p>
+            <p class="footer__inner-text__p">
+              And with Apple Music, custom Spatial Audio with dynamic head
+              tracking creates a unique three-dimensional listening experience.
+            </p>
+            <button
+              class="footer__inner-text__button"
+              type="button"
+              aria-label="footer button buy"
+            >
+              BUY
+            </button>
+          </div>
+
+          <div class="footer__inner-contacts" aria-label="footer contacts">
+            <p>Find a retailer near you</p>
+            <a href="tel:800207758">Or call 800 207 758</a>
+            <svg class="logo__footer" aria-label="logo">
+              <use href="./assets/sprites.svg#logo-icon"></use>
+            </svg>
+          </div>
+          <div class="footer__inner-nav" aria-label="footer nav">
+            <p>Copyright © 2023 Apple Inc.</p>
+            <a href="#">All rights reserved.</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Site Map</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
