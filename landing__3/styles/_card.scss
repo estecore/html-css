@@ -7,7 +7,7 @@
   height: 205px;
   padding: 20px 10px 0;
   border-radius: 20px;
-  background-color: color.adjust(v.$color_white, $alpha: -0.85);
+  background-color: v.$bg__color;
   transition: background-color 0.3s, box-shadow 0.3s;
   @include m.d-flex(start, center, nowrap, column, 0, 10px);
 
@@ -60,13 +60,15 @@
   }
 }
 
+// Experience card
+
 .img-card {
   position: relative;
   overflow: hidden;
   width: 325px;
   height: 295px;
   border-radius: 10px;
-  background-color: color.adjust(v.$color_white, $alpha: -0.85);
+  background-color: v.$bg__color;
   transition: box-shadow 0.2s;
   flex-shrink: 0;
   @include m.d-flex(space-between, center, nowrap, column, 0, 0);
@@ -120,6 +122,40 @@
   @media (max-width: v.$media_sm) {
     & {
       width: 300px;
+    }
+  }
+}
+
+// Slider Card
+
+.slider__card {
+  width: 500px;
+  height: 275px;
+  background: url(../assets/testimonials__card-bg.svg) center/contain no-repeat;
+  @include m.d-flex(start, start, nowrap, column, 0, 35px);
+
+  &-avatar {
+    margin: 20px 0 0 20px;
+    border-radius: 50%;
+  }
+
+  &-quote {
+    margin: 0 45px 0 30px;
+    line-height: 1.4;
+    text-align: justify;
+    @include m.font(20px, 400, v.$color_white);
+  }
+
+  @media (max-width: v.$media_md) {
+    & {
+      width: 330px;
+      row-gap: 15px;
+      background: url(../assets/testimonials__card-bg.svg) 50% 0 / contain
+        no-repeat;
+
+      &-quote {
+        @include m.font(13px, 400, v.$color_white);
+      }
     }
   }
 }

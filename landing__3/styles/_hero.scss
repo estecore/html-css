@@ -88,7 +88,7 @@
     margin: 170px auto 0;
     width: 680px;
     height: 60px;
-    background-color: color.adjust(v.$color_white, $alpha: -0.85);
+    background-color: v.$bg__color;
     border-radius: 20px;
     @include m.d-flex(end, center, nowrap, row, 10px);
 
