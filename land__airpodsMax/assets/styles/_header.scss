@@ -23,6 +23,12 @@
         align-items: center;
         gap: 40px;
 
+        @media (max-width: v.$media-575) {
+          & {
+            gap: 10px;
+          }
+        }
+
         .list__item {
           font-weight: 700;
 
@@ -40,6 +46,13 @@
               background: v.$color-white;
               color: v.$color-black;
             }
+
+            @media (max-width: v.$media-575) {
+              & {
+                padding: 10px 30px;
+                font-size: 1.4rem;
+              }
+            }
           }
         }
       }
@@ -50,7 +63,7 @@
 .intro {
   position: relative;
   text-align: center;
-  min-height: 1080px;
+  // min-height: 1080px;
 
   &__title {
     user-select: none;
@@ -82,7 +95,7 @@
   }
 
   &__img {
-    width: 800px;
+    width: 100%;
     // height: 755px;
   }
 }

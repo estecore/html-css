@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 .section-composition {
   padding: 0 0 180px;
 
@@ -5,12 +7,12 @@
     text-align: center;
 
     &__title {
-      font-size: 64px;
+      font-size: 6.4rem;
       font-weight: 700;
     }
 
     &__desc {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 500;
       max-width: 650px;
       margin: 20px auto 40px;
@@ -31,7 +33,7 @@
         &__p {
           max-width: 230px;
           text-align: start;
-          font-size: 16px;
+          font-size: 1.6rem;
           font-weight: 500;
         }
       }
@@ -39,6 +41,43 @@
       &-img {
         border-radius: 10px;
       }
+
+      @media (max-width: v.$media-575) {
+        & {
+          flex-direction: column;
+        }
+
+        &-text {
+          gap: 20px;
+
+          &__p {
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+
+        &-img {
+          width: min(300px, 100%);
+          margin: 20px auto 0;
+        }
+      }
+    }
+
+    @media (max-width: v.$media-575) {
+      &__title {
+        font-size: 3.6rem;
+      }
+
+      &__desc {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @media (max-width: v.$media-575) {
+    & {
+      padding: 0 0 80px;
     }
   }
 }

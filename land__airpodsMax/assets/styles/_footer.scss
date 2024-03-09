@@ -24,8 +24,6 @@
       }
 
       &__button {
-        width: 150px;
-        height: 50px;
         margin: 0 auto;
         padding: 15px 58px;
         background: v.$color-white;
@@ -66,6 +64,28 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+    }
+  }
+
+  @media (max-width: v.$media-575) {
+    & {
+      min-height: auto;
+
+      &__inner {
+        &-text {
+          &__p {
+            font-size: 1.4rem;
+          }
+
+          &__button {
+            padding: 10px 30px;
+            font-size: 1.4rem;
+          }
+        }
+        &-nav {
+          flex-direction: column;
+        }
+      }
     }
   }
 }
