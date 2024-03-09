@@ -97,5 +97,10 @@
   &__img {
     width: 100%;
     // height: 755px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 }

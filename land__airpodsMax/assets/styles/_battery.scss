@@ -1,11 +1,11 @@
 @use "variables" as v;
 
-.section-buttery {
+.section-battery {
   padding: 80px 0;
   text-align: center;
   //   background: #fafafa;
 
-  .buttery {
+  .battery {
     &__title {
       font-size: 64px;
       font-weight: 700;
@@ -20,7 +20,13 @@
     &__img {
       width: 400px;
       height: 365px;
+      margin: 0 auto;
       border-radius: 10px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
     }
 
     @media (max-width: v.$media-575) {

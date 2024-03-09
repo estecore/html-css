@@ -11,6 +11,7 @@
     />
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <script src="./assets/js/main.js" defer></script>
     <title>AirPods Max</title>
   </head>
   <body>
@@ -57,19 +58,40 @@
             </h1> -->
 
             <img
-              class="intro__img"
+              class="intro__img active"
               src="./assets/images/airpods-blue__test.png"
               alt="AirPods Max blue"
+              data-color="blue"
             />
             <!-- <img
               class="intro__img"
               src="./assets/images/blue.webp"
               alt="AirPods Max blue"
             /> -->
-            <!-- <img class="intro__img" src="./assets/images/pink.webp" alt="AirPods Max pink" />  -->
-            <!-- <img class="intro__img" src="./assets/images/green.webp" alt="AirPods Max green" />  -->
-            <!-- <img class="intro__img" src="./assets/images/black.webp" alt="AirPods Max black" />  -->
-            <!-- <img class="intro__img" src="./assets/images/white.webp" alt="AirPods Max white" />  -->
+            <img
+              class="intro__img"
+              src="./assets/images/pink.webp"
+              alt="AirPods Max pink"
+              data-color="pink"
+            />
+            <img
+              class="intro__img"
+              src="./assets/images/green.webp"
+              alt="AirPods Max green"
+              data-color="green"
+            />
+            <img
+              class="intro__img"
+              src="./assets/images/black.webp"
+              alt="AirPods Max black"
+              data-color="black"
+            />
+            <img
+              class="intro__img"
+              src="./assets/images/white.webp"
+              alt="AirPods Max white"
+              data-color="white"
+            />
           </div>
         </div>
       </section>
@@ -85,14 +107,22 @@
             </p>
 
             <div class="colors" aria-label="choose color">
-              <div class="colors__item" aria-label="choose color button black">
+              <div
+                class="colors__item"
+                aria-label="choose color button black"
+                data-color="black"
+              >
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-black.webp"
                   alt="choose color black"
                 />
               </div>
-              <div class="colors__item" aria-label="choose color button white">
+              <div
+                class="colors__item"
+                aria-label="choose color button white"
+                data-color="white"
+              >
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-white.webp"
@@ -100,7 +130,11 @@
                 />
               </div>
 
-              <div class="colors__item" aria-label="choose color button green">
+              <div
+                class="colors__item"
+                aria-label="choose color button green"
+                data-color="green"
+              >
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-green.webp"
@@ -108,7 +142,11 @@
                 />
               </div>
 
-              <div class="colors__item" aria-label="choose color button pink">
+              <div
+                class="colors__item"
+                aria-label="choose color button pink"
+                data-color="pink"
+              >
                 <img
                   class="colors__img"
                   src="./assets/images/colors/color-pink.webp"
@@ -116,13 +154,17 @@
                 />
               </div>
 
-              <!-- <div class="colors__item" aria-label="choose color button blue">
+              <div
+                class="colors__item active"
+                aria-label="choose color button blue"
+                data-color="blue"
+              >
                 <img
-              class="colors__img"
-                src="./assets/images/colors/color-blue.webp"
-                alt="choose color blue"
-              />
-              </div> -->
+                  class="colors__img"
+                  src="./assets/images/colors/color-blue.webp"
+                  alt="choose color blue"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -160,69 +202,79 @@
               </div>
 
               <img
-                class="composition__inner-img"
+                class="composition__inner-img active"
                 src="./assets/images/compositions/composition-blue.webp"
                 alt="AirPods Max composition blue"
+                data-color="blue"
               />
-              <!-- <img 
+              <img
                 class="composition__inner-img"
                 src="./assets/images/compositions/composition-black.webp"
                 alt="AirPods Max composition black"
+                data-color="black"
               />
-              <img 
-              class="composition__inner-img"
+              <img
+                class="composition__inner-img"
                 src="./assets/images/compositions/composition-pink.webp"
                 alt="AirPods Max composition pink"
+                data-color="pink"
               />
-              <img 
-              class="composition__inner-img"
+              <img
+                class="composition__inner-img"
                 src="./assets/images/compositions/composition-white.webp"
                 alt="AirPods Max composition white"
+                data-color="white"
               />
-              <img 
-              class="composition__inner-img"
+              <img
+                class="composition__inner-img"
                 src="./assets/images/compositions/composition-green.webp"
                 alt="AirPods Max composition green"
-              /> -->
+                data-color="green"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Buttery -->
-      <section class="section-buttery" aria-label="buttery section">
+      <!-- battery -->
+      <section class="section-battery" aria-label="battery section">
         <div class="container">
-          <div class="buttery" aria-label="buttery inner">
-            <h2 class="buttery__title">It even preserves the battery.</h2>
-            <p class="buttery__desc">
+          <div class="battery" aria-label="battery inner">
+            <h2 class="battery__title">It even preserves the battery.</h2>
+            <p class="battery__desc">
               When stored in the sleek and lightweight <b>Smart Case</b> ,
               AirPods Max enter a low-power state to save energy.
             </p>
             <img
-              class="buttery__img"
+              class="battery__img active"
               src="./assets/images/case/case-blue.webp"
               alt="case blue"
+              data-color="blue"
             />
-            <!-- <img
-              class="buttery__img"
+            <img
+              class="battery__img"
               src="./assets/images/case/case-black.webp"
               alt="case black"
+              data-color="balck"
             />
             <img
-              class="buttery__img"
+              class="battery__img"
               src="./assets/images/case/case-white.webp"
               alt="case white"
+              data-color="white"
             />
             <img
-              class="buttery__img"
+              class="battery__img"
               src="./assets/images/case/case-pink.webp"
               alt="case pink"
+              data-color="pink"
             />
             <img
-              class="buttery__img"
+              class="battery__img"
               src="./assets/images/case/case-green.webp"
               alt="case green"
-            /> -->
+              data-color="green"
+            />
           </div>
         </div>
       </section>

@@ -116,6 +116,10 @@ button {
 }
 .intro__img {
   width: 100%;
+  display: none;
+}
+.intro__img.active {
+  display: block;
 }
 
 .section-choose {
@@ -158,6 +162,9 @@ button {
   transition: translate 0.2s, -webkit-box-shadow 0.2s;
   transition: box-shadow 0.2s, translate 0.2s;
   transition: box-shadow 0.2s, translate 0.2s, -webkit-box-shadow 0.2s;
+}
+.section-choose .choose__color .colors__item.active {
+  display: none;
 }
 .section-choose .choose__color .colors__item:hover {
   -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
@@ -229,6 +236,10 @@ button {
 }
 .section-composition .composition__inner-img {
   border-radius: 10px;
+  display: none;
+}
+.section-composition .composition__inner-img.active {
+  display: block;
 }
 @media (max-width: 575px) {
   .section-composition .composition__inner {
@@ -264,38 +275,43 @@ button {
   }
 }
 
-.section-buttery {
+.section-battery {
   padding: 80px 0;
   text-align: center;
 }
-.section-buttery .buttery__title {
+.section-battery .battery__title {
   font-size: 64px;
   font-weight: 700;
 }
-.section-buttery .buttery__desc {
+.section-battery .battery__desc {
   font-size: 16px;
   font-weight: 500;
   margin: 20px auto 40px;
 }
-.section-buttery .buttery__img {
+.section-battery .battery__img {
   width: 400px;
   height: 365px;
+  margin: 0 auto;
   border-radius: 10px;
+  display: none;
+}
+.section-battery .battery__img.active {
+  display: block;
 }
 @media (max-width: 575px) {
-  .section-buttery .buttery__title {
+  .section-battery .battery__title {
     font-size: 3.6rem;
   }
-  .section-buttery .buttery__desc {
+  .section-battery .battery__desc {
     font-size: 1.4rem;
   }
-  .section-buttery .buttery__img {
+  .section-battery .battery__img {
     width: min(300px, 100%);
     height: 100%;
   }
 }
 @media (max-width: 575px) {
-  .section-buttery {
+  .section-battery {
     padding: 40px 0;
   }
 }
