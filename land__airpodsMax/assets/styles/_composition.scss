@@ -40,6 +40,11 @@
 
       &-img {
         border-radius: 10px;
+        display: none;
+
+        &.active {
+          display: block;
+        }
       }
 
       @media (max-width: v.$media-575) {
