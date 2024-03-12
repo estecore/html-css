@@ -14,6 +14,10 @@
   color: unset;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: v.$color_blue;

@@ -102,5 +102,71 @@
         }
       }
     }
+
+    @media (max-width: v.$media_md) {
+      .covid,
+      .globe {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile-navigation {
+  display: none;
+
+  &__burger {
+    @include m.pos(absolute, 10, -1, top, right, 13px, 20px);
+
+    &-icon {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      fill: v.$color_white;
+    }
+  }
+
+  &__toggler {
+    display: none;
+
+    &:checked + .nav {
+      translate: 0;
+    }
+  }
+
+  .nav {
+    padding: 100px 70px 0;
+    background-color: color.adjust(v.$color_black, $alpha: -0.3);
+    backdrop-filter: blur(10px);
+    translate: 100% 0;
+    transition: translate 0.3s;
+    @include m.pos(fixed, 999, 0);
+
+    &__list {
+      @include m.d-flex(start, start, nowrap, column, 0, 20px);
+
+      &-item {
+        &-link {
+          @include m.font(20px, 400, v.$color_white);
+          text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.1);
+        }
+      }
+    }
+    &__close {
+      @include m.pos(absolute, 10, -1, top, right, 13px, 20px);
+
+      &-icon {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        fill: v.$color_white;
+      }
+    }
+  }
+
+  @media (max-width: v.$media_md) {
+    & {
+      display: block;
+    }
   }
 }

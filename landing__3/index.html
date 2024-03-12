@@ -51,6 +51,79 @@
       </div>
     </header>
 
+    <div class="mobile-navigation">
+      <label for="checkboxID" class="mobile-navigation__burger">
+        <svg class="mobile-navigation__burger-icon" aria-label="burger icon">
+          <use href="assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+
+      <input
+        type="checkbox"
+        id="checkboxID"
+        class="mobile-navigation__toggler"
+      />
+
+      <nav class="mobile-navigation__menu nav" aria-label="mobile navigation">
+        <ul class="nav__list" aria-label="mobile navigation list">
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#work"
+              class="nav__list-item-link"
+              aria-label="link to work"
+              >How We Work</a
+            >
+          </li>
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#about"
+              class="nav__list-item-link"
+              aria-label="link to about"
+              >About Us</a
+            >
+          </li>
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#experience"
+              class="nav__list-item-link"
+              aria-label="link to experience"
+              >Our Experience</a
+            >
+          </li>
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#testimonials"
+              class="nav__list-item-link"
+              aria-label="link to testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#form"
+              class="nav__list-item-link"
+              aria-label="link to form"
+              >Form</a
+            >
+          </li>
+          <li class="nav__list-item" aria-label="mobile navigation item">
+            <a
+              href="#contacts"
+              class="nav__list-item-link"
+              aria-label="link to contacts"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <label for="checkboxID" class="nav__close">
+          <svg class="nav__close-icon" aria-label="close icon">
+            <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
+
     <!-- Main -->
     <main aria-label="main content">
       <!-- Hero -->
@@ -87,7 +160,7 @@
 
       <!-- Work -->
 
-      <section class="work-section" aria-label="work section">
+      <section class="work-section" aria-label="work section" id="work">
         <div class="container">
           <div class="work">
             <h2 class="work__title">How we work</h2>
@@ -192,7 +265,7 @@
       <hr class="divider" />
 
       <!-- About -->
-      <section class="about-section" aria-label="about section">
+      <section class="about-section" aria-label="about section" id="about">
         <div class="container">
           <div class="about">
             <div class="about__quality">
@@ -227,7 +300,11 @@
 
       <!-- Experience -->
 
-      <section class="experience-section" aria-label="experience section">
+      <section
+        class="experience-section"
+        aria-label="experience section"
+        id="experience"
+      >
         <div class="container">
           <div class="experience">
             <h2 class="experience__title">Our experience</h2>
@@ -283,7 +360,11 @@
 
       <!-- Testimonials -->
 
-      <section class="testimonials-section" aria-label="testimonials section">
+      <section
+        class="testimonials-section"
+        aria-label="testimonials section"
+        id="testimonials"
+      >
         <div class="container">
           <div class="testimonials">
             <h2 class="testimonials__title">Testimonials</h2>
@@ -363,7 +444,7 @@
       </section>
 
       <!-- Form -->
-      <section class="form-section" aria-label="form section">
+      <section class="form-section" aria-label="form section" id="form">
         <div class="container">
           <div class="form-section__wrapper">
             <form
@@ -412,7 +493,13 @@
       </section>
     </main>
 
-    <footer class="footer-section" aria-label="footer-contacts section">
+    <!-- Footer -->
+
+    <footer
+      class="footer-section"
+      aria-label="footer-contacts section"
+      id="contacts"
+    >
       <div class="container">
         <div class="footer" aria-label="footer">
           <div class="footer__terms" aria-label="footer terms">
