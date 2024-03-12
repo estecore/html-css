@@ -1,7 +1,5 @@
 const btnColor = document.querySelectorAll(".colors__item");
-const introImg = document.querySelectorAll(".intro__img");
-const composImg = document.querySelectorAll(".composition__inner-img");
-const batteryImg = document.querySelectorAll(".battery__img");
+const setColor = document.querySelectorAll("[data-color]");
 
 const blue = "linear-gradient(180deg, #cadbeb 0%, #ebebeb 100%)";
 const pink = "linear-gradient(180deg, #f3d6d1 0%, #ebebeb 100%)";
@@ -27,29 +25,11 @@ btnColor.forEach((item) => {
     document.querySelector("body").style.background =
       bgColor[item.dataset.color];
 
-    // replace images
-    introImg.forEach((img) => {
-      if (item.dataset.color === img.dataset.color) {
-        introImg.forEach((img) => {
-          img.classList.remove("active");
-        });
-        img.classList.add("active");
-      }
-    });
-    composImg.forEach((img) => {
-      if (item.dataset.color === img.dataset.color) {
-        composImg.forEach((img) => {
-          img.classList.remove("active");
-        });
-        img.classList.add("active");
-      }
-    });
-    batteryImg.forEach((img) => {
-      if (item.dataset.color === img.dataset.color) {
-        batteryImg.forEach((img) => {
-          img.classList.remove("active");
-        });
-        img.classList.add("active");
+    setColor.forEach((color) => {
+      color.classList.remove("active");
+
+      if (item.dataset.color === color.dataset.color) {
+        color.classList.add("active");
       }
     });
   });
