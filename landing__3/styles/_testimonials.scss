@@ -1,0 +1,121 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+%slider-btn {
+  width: 67px;
+  height: 67px;
+  border-radius: 20px;
+  background: v.$bg__color;
+  rotate: z 45deg;
+}
+
+%slider-btn-icon {
+  width: 36px;
+  height: 23px;
+  fill: v.$color_white;
+  transition: fill 0.2s, scale 0.2s;
+}
+
+.testimonials {
+  padding: 100px 0;
+  margin: 0 auto;
+  @include m.d-flex(start, center, nowrap, column, 0, 90px);
+
+  &__title {
+    @include m.font(60px, 400, v.$color_white);
+
+    @media (max-width: v.$media_md) {
+      & {
+        @include m.font(35px, 400, v.$color_white);
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+    height: 500px;
+
+    &__left-btn {
+      @extend %slider-btn;
+      @include m.pos(absolute, 1, -1, top, left, 100px, -100px);
+
+      &-icon {
+        @extend %slider-btn-icon;
+        rotate: z 135deg;
+      }
+    }
+
+    &__right-btn {
+      @extend %slider-btn;
+      @include m.pos(absolute, 1, -1, top, right, 100px, -100px);
+
+      &-icon {
+        @extend %slider-btn-icon;
+        rotate: z -45deg;
+      }
+    }
+
+    &__left-btn:hover,
+    &__right-btn:hover {
+      .slider__left-btn-icon,
+      .slider__right-btn-icon {
+        fill: v.$color_black;
+        scale: 1.2;
+      }
+    }
+
+    &__points {
+      @include m.pos(absolute, 1, -1, bottom, left, 0, 50%);
+      @include m.d-flex(start, center, nowrap, row, 9px, 0);
+      translate: -50% 0;
+
+      &-item {
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: v.$color_white;
+        transition: background-color 0.2s, scale 0.2s;
+
+        &:hover {
+          scale: 0.7;
+          background: #b4b4b4;
+        }
+      }
+    }
+
+    @media (max-width: v.$media_md) {
+      & {
+        height: 300px;
+
+        &__left-btn,
+        &__right-btn {
+          top: unset;
+          bottom: 20px;
+          left: unset;
+          right: unset;
+        }
+
+        &__left-btn {
+          left: 0;
+        }
+        &__right-btn {
+          right: 0;
+        }
+
+        &__points {
+          bottom: 45px;
+        }
+      }
+    }
+
+    @media (max-width: v.$media_xs) {
+      &__left-btn {
+        left: 10px;
+      }
+      &__right-btn {
+        right: 10px;
+      }
+    }
+  }
+}

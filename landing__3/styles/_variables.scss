@@ -1,0 +1,15 @@
+@use "sass:color";
+
+$color_blue: #678ff2;
+$color_white: #fff;
+$color_black: #1d1d1d;
+$color_grey: #999999;
+
+$bg__color: color.adjust($color_white, $alpha: -0.85);
+
+$media_xxl: 1440px;
+$media_xl: 1200px;
+$media_lg: 992px;
+$media_md: 768px;
+$media_sm: 500px;
+$media_xs: 320px;
